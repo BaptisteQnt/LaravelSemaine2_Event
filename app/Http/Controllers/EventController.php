@@ -50,8 +50,6 @@ class EventController extends Controller
             'types' => 'array',
         ]);
 
-        
-
         $event = Event::create([
             'title' => $request->title,
             'description' => $request->description,
@@ -70,14 +68,6 @@ class EventController extends Controller
             
         $event->keywords()->attach($request->keywords);
         $event->types()->attach($request->types);
-        
-        // Charge la relation et affiche les mots-clés liés
-        // $event->load('keywords');
-        // dd($event->keywords);
-
-        // if($request->has('types')) {
-        //     $event->types()->attach($request->types);
-        // }
 
         return redirect()->route('events.index')->with('success', 'Evenement créé avec succes ! En attente de validation.');
 

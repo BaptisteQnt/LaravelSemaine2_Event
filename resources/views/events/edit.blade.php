@@ -31,7 +31,7 @@
                     <input type="text" name="location" value="{{ $event->location }}" class="w-full border rounded px-3 py-2" required>
                 </div>
 
-                <!-- Dates existantes -->
+                
                 <div class="mb-4">
                     <label class="block text-gray-700">Dates</label>
                     <div id="dates-container">
@@ -42,7 +42,7 @@
                     <button type="button" id="add-date" class="mt-2 px-4 py-2 bg-blue-500 text-white rounded">+ Ajouter une date</button>
                 </div>
 
-                <!-- Mots-clés -->
+                
                 <div class="mb-4">
                     <label class="block text-gray-700">Mots-clés</label>
                     <select name="keywords[]" multiple class="w-full border rounded px-3 py-2">

@@ -16,7 +16,6 @@
                 <p class="text-sm">🧑‍💼 <strong>Créé par :</strong> {{ $event->creator->name }}</p>
             </div>
 
-            <!-- Affichage des dates -->
             <div class="mt-4">
                 <p class="text-sm font-semibold">📅 Dates :</p>
                 <ul class="text-sm text-gray-600">
@@ -26,7 +25,6 @@
                 </ul>
             </div>
 
-            <!-- Mots-clés -->
             <div class="mt-4">
                 <p class="text-sm font-semibold">🏷️ Mots-clés :</p>
                 <div class="flex gap-2">
@@ -36,7 +34,6 @@
                 </div>
             </div>
 
-            <!-- Types d’événements -->
             <div class="mt-4">
                 <p class="text-sm font-semibold">🎭 Type d’événement :</p>
                 <div class="flex gap-2">
@@ -46,7 +43,6 @@
                 </div>
             </div>
 
-            <!-- Actions -->
             <div class="mt-6 flex justify-between">
                 <a href="{{ route('events.index') }}" class="px-3 py-2 bg-gray-500 text-white rounded">Retour</a>
                 

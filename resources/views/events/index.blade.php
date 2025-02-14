@@ -22,7 +22,7 @@
                         <p class="text-sm mt-2">📍 <strong>Lieu :</strong> {{ $event->location }}</p>
                         <p class="text-sm">🎟 <strong>Places :</strong> {{ $event->places ?? 'Non spécifié' }}</p>
                         
-                        <!-- Affichage des dates -->
+                        
                         <p class="text-sm mt-2"><strong>Dates :</strong></p>
                         <ul class="text-sm text-gray-600">
                             @foreach ($event->dates as $date)
@@ -53,9 +53,6 @@
                     </div>
                 @endforeach
             </div>
-            {{-- <div class="mt-6">
-                {{ $events->links() }}
-            </div> --}}
         </div>
     </div>
 </x-app-layout>
